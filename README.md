@@ -1,16 +1,27 @@
-# React + Vite
+# React To-Do App (Yapılacaklar Listesi) Projesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, React kütüphanesi kullanılarak oluşturulmuş klasik bir "To-Do App" (Yapılacaklar Listesi) uygulamasıdır.
 
-Currently, two official plugins are available:
+🌐 Canlı Demo
+Projenin canlı demosuna aşağıdaki linkten ulaşabilirsiniz:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Siteye Gitmek İçin](https://vermillion-puppy-5d4c97.netlify.app/)
 
-## React Compiler
+🚀 Özellikler
+Bu projede aşağıdaki işlevler bulunmaktadır:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Görev Ekleme:** Kullanıcı, input alanına yeni bir görev yazıp 'Enter' tuşuna basarak listeye yeni bir görev ekleyebilir.
+* **Görev Tamamlama:** Her bir görevin yanındaki checkbox ile görevin tamamlanma durumu (`completed`) anlık olarak değiştirilebilir.
+* **Görev Silme:** Görevlerin üzerindeki 'X' butonu ile istenen görev listeden kaldırılabilir.
+* **Görev Sayacı:** Sol altta, tamamlanmamış ("active") görevlerin sayısı dinamik olarak gösterilir.
+* **Tamamlananları Temizle:** "Clear completed" butonu ile tamamlanmış tüm görevler tek seferde listeden silinebilir.
+* **Hepsini İşaretle:** Sol üstteki "toggle-all" butonu ile tüm görevler tek seferde tamamlandı olarak işaretlenebilir veya bu işaret kaldırılabilir.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Kullanılan Teknolojiler
+* **React:** Projenin temelini oluşturan modern JavaScript kütüphanesi.
+* **React Hooks:**
+    * `useState`: Bileşenlerin yerel durumunu (yapılacaklar listesi, aktif filtre) yönetmek için.
+* **Vite:** Hızlı ve modern bir geliştirme (development) ve derleme (build) aracı.
+* **HTML5 & JSX:** Bileşenlerin yapısını ve iskeletini oluşturmak için.
+* **CSS3:** Projeye özel stillendirmeler ve TodoMVC tasarımı.
+* **Netlify:** Projenin canlıya alınması (deployment) ve barındırılması.
